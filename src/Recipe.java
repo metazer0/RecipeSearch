@@ -5,8 +5,10 @@ public class Recipe {
     private int cookingTime;
     private ArrayList<String> ingredients;
 
-    public Recipe(){
-
+    public Recipe(String name, int cookingTime,ArrayList<String> ingredients ){
+        this.name = name;
+        this.cookingTime = cookingTime;
+        this.ingredients = ingredients;
     }
 
     public String getName() {
@@ -29,7 +31,7 @@ public class Recipe {
         return ingredients;
     }
 
-    public void setIngredients(ArrayList<String> ingredients) {
-        this.ingredients = ingredients;
+    public void setIngredients(String ingredient) {
+        this.ingredients.add(ingredient);
     }
 }
